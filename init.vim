@@ -1,25 +1,6 @@
 source ~/.config/nvim/plugins.vim
 colorscheme dracula
 doautocmd User PlugLoaded
-set ic
-set autowrite
-set autowriteall
-set incsearch
-set mouse=a
-set number
-set relativenumber
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
-set smarttab
-set expandtab
-set autoindent
-set smartindent
-set list
-set listchars=tab:▸\ ,trail:·
-set clipboard=unnamedplus
-set encoding=UTF-8
-set foldmethod=indent
 abbr sysout  System.out.println(
 abbr psvm public static void main(
 abbr Scanner Scanner = new Scanner(System.in
@@ -44,6 +25,7 @@ let nvim_settings_dir = '~/.config/nvim/'
 execute 'source '.nvim_settings_dir.'nerdtree.vim'
 execute 'source '.nvim_settings_dir.'terminal.vim'
 execute 'source '.nvim_settings_dir.'coc.vim'
+execute 'source '.nvim_settings_dir.'map.vim'
 
 
 

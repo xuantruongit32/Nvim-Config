@@ -19,6 +19,8 @@ Plug 'voldikss/vim-floaterm'
 Plug 'mhinz/vim-signify'
 Plug 'tpope/vim-fugitive'
 Plug 'jiangmiao/auto-pairs'
+Plug 'Yggdroot/indentLine'
+Plug '907th/vim-auto-save'
 call plug#end()
 
 
@@ -44,4 +46,7 @@ map <C-n> :NERDTreeToggle<CR>
 let g:ale_linters = {
             \ 'java': ['javac', 'gradle'],
             \}
+let g:auto_save = 1
+let g:auto_save_delay = 5
+
 
