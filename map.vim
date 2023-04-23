@@ -16,7 +16,6 @@ set list
 set listchars=tab:\|\
 set clipboard=unnamedplus
 set encoding=UTF-8
-set foldmethod=indent
 set breakindent 
 set cursorline 
 set linebreak
