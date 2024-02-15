@@ -1,10 +1,6 @@
 source ~/.config/nvim/plugins.vim
 colorscheme dracula
 doautocmd User PlugLoaded
-abbr sysout  System.out.println(
-abbr psvm public static void main(
-abbr Scanner Scanner = new Scanner(System.in
-abbr iscanner import java.util.Scanner;
 syntax on
 filetype plugin on
 function! CheckBackspace() abort
@@ -22,8 +18,6 @@ vnoremap _fold :set foldmethod=indent
 set guifont=Fira\ Code:h12
 "Extended settings
 let nvim_settings_dir = '~/.config/nvim/'
-execute 'source '.nvim_settings_dir.'nerdtree.vim'
-execute 'source '.nvim_settings_dir.'terminal.vim'
 execute 'source '.nvim_settings_dir.'coc.vim'
 execute 'source '.nvim_settings_dir.'map.vim'
 

@@ -4,10 +4,10 @@ set autowriteall
 set incsearch
 set mouse=a
 set number
-set relativenumber
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
+set relativenumber
 set smarttab
 set expandtab
 set autoindent
@@ -25,5 +25,11 @@ set foldenable
 set preserveindent
 set splitbelow
 set splitright
+nmap <silent><leader>ca <Plug>(coc-codelens-action)
+vmap <silent><leader>a  <Plug>(coc-codeaction-selected)
+nmap <silent><leader>a  <Plug>(coc-codeaction)
+map <silent> <F4> :FloatermNew<CR>
+
+
 
 
