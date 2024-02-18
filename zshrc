@@ -19,7 +19,6 @@ source /home/v/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
     alias cx="chmod+x"
     alias rmr="rm -r"
     ./capslock.sh
-    keynav
     xrandr --output eDP-1 --auto --output DP-2 --auto --right-of eDP-1 --rotate left
     xset r rate 400 100
     clear
