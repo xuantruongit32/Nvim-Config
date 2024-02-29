@@ -78,6 +78,9 @@ nnoremap <leader>fr :CocCommand flutter.run <CR>
 
 nnoremap <C-b> :NERDTreeToggle<CR>
 " nnoremap <C-S-b> :NERDTreeFind<CR>
+
+nnoremap <F4> :FloatermToggle<CR>
+
 	
 let g:dart_format_on_save = 1
 let g:dartfmt_options = ['--fix', '--line-length 120']
