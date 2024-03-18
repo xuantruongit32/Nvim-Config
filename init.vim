@@ -78,7 +78,9 @@ let mapleader=" "
 nnoremap <leader>fe :below new output:///flutter-dev <CR>
 nnoremap <leader>fd :CocCommand flutter.devices <CR>
 nnoremap <leader>fr :CocCommand flutter.run <CR>
-nnoremap <leader>fh  :CocCommand flutter.dev.hotRestart <CR>
+nnoremap <leader>fp :CocCommand flutter.pub.get<CR>
+nnoremap <leader>cc :CocCommand<Space>
+
 
 
 nnoremap <C-b> :NERDTreeToggle<CR>
@@ -149,8 +151,7 @@ let g:coc_global_extensions = [
   \ 'coc-json',
   \ ]
 let g:auto_save = 1
-let g:auto_save_events = ["InsertLeave", "TextChanged", "TextChangedI"]
-
+let g:auto_save_events = ["BufLeave"]
 
 
 
