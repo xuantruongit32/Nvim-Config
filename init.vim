@@ -21,6 +21,7 @@ Plug 'tpope/vim-projectionist'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'jiangmiao/auto-pairs'
 
+
 " Dart
 Plug 'dart-lang/dart-vim-plugin'
 
@@ -68,20 +69,24 @@ set shiftwidth=4
 set colorcolumn=120
 set clipboard=unnamedplus
 set backspace=indent,eol,start
+set clipboard=unnamedplus
+set clipboard^=unnamed
+
 highlight ColorColumn ctermbg=0 guibg=lightgrey
 
 let mapleader=" "
 nnoremap <leader>fe :below new output:///flutter-dev <CR>
 nnoremap <leader>fd :CocCommand flutter.devices <CR>
 nnoremap <leader>fr :CocCommand flutter.run <CR>
+nnoremap <leader>fh  :CocCommand flutter.dev.hotRestart <CR>
 
 
 nnoremap <C-b> :NERDTreeToggle<CR>
 " nnoremap <C-S-b> :NERDTreeFind<CR>
-
+"
 nnoremap <F4> :FloatermToggle<CR>
 
-	
+
 let g:dart_format_on_save = 1
 let g:dartfmt_options = ['--fix', '--line-length 120']
 
@@ -143,8 +148,11 @@ let g:coc_global_extensions = [
   \ 'coc-yaml',
   \ 'coc-json',
   \ ]
+let g:auto_save = 1
+let g:auto_save_events = ["InsertLeave", "TextChanged", "TextChangedI"]
 
-let g:NERDTreeGitStatusWithFlags = 1
+
+
 
 
 
