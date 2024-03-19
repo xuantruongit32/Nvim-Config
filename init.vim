@@ -67,10 +67,7 @@ set tabstop=4
 set softtabstop=0 noexpandtab
 set shiftwidth=4
 set colorcolumn=120
-set clipboard=unnamedplus
 set backspace=indent,eol,start
-set clipboard=unnamedplus
-set clipboard^=unnamed
 
 highlight ColorColumn ctermbg=0 guibg=lightgrey
 
@@ -152,6 +149,7 @@ let g:coc_global_extensions = [
   \ ]
 let g:auto_save = 1
 let g:auto_save_events = ["BufLeave"]
+
 
 
 
