@@ -25,10 +25,6 @@ Plug 'jiangmiao/auto-pairs'
 " Dart
 Plug 'dart-lang/dart-vim-plugin'
 
-" Typescript
-Plug 'ianks/vim-tsx'
-Plug 'leafgarland/typescript-vim'
-
 " Git
 Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
