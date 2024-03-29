@@ -145,6 +145,12 @@ let g:coc_global_extensions = [
   \ ]
 let g:auto_save = 1
 let g:auto_save_events = ["BufLeave"]
+if has('nvim-0.4.3') || has('patch-8.2.0750')
+          nnoremap <nowait><expr> <C-f> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-f>"
+          nnoremap <nowait><expr> <C-b> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-b>"
+          inoremap <nowait><expr> <C-f> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(1)\<cr>" : "\<Right>"
+          inoremap <nowait><expr> <C-b> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(0)\<cr>" : "\<Left>"
+endif
 
 
 
