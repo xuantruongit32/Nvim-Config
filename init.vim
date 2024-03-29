@@ -28,10 +28,9 @@ Plug 'dart-lang/dart-vim-plugin'
 " Git
 Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
-
+Plug 'airblade/vim-gitgutter'
 
 " File browser
-Plug 'Mofiqul/dracula.nvim'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'voldikss/vim-floaterm'
 Plug '907th/vim-auto-save'
@@ -151,10 +150,5 @@ if has('nvim-0.4.3') || has('patch-8.2.0750')
           inoremap <nowait><expr> <C-f> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(1)\<cr>" : "\<Right>"
           inoremap <nowait><expr> <C-j> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(0)\<cr>" : "\<Left>"
 endif
-
-
-
-
-
 
 
