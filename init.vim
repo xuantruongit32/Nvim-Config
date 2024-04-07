@@ -32,6 +32,8 @@ Plug 'airblade/vim-gitgutter'
 
 " File browser
 Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'Mofiqul/dracula.nvim'
+
 Plug 'voldikss/vim-floaterm'
 Plug '907th/vim-auto-save'
 
